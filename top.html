@@ -1,0 +1,106 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Absurd Battle Simulator</title>
+	<meta name="description" content="Absurd Battle Simulator">
+	<meta name="author" content="Michael Winger">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Javascript links-->
+    <!-- Bootstrap Scripts -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <!-- jQuery UI -->    
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+        
+    <!-- Font Links -->
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<!-- CSS Links -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Site Specific CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar begin -->
+    <nav class="navbar sticky-top navbar-custom navbar-expand-md" style="background:#87000">
+        <a class="navbar-brand" href="#"><img src="img/_logo.png" width="30" alt="" class="d-inline-block align-top"><strong>&nbsp;Absurd Battle Simulator</strong></a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        
+        <div id="navbarNav" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="top.html">Top Combatants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    
+    <!-- main container -->
+    <div class="col text-center">
+        <h1 style="color:#870000">Absurd Battle Simulator</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center"><h2 style="color:#ffe082"><i class="fa fa-line-chart" aria-hidden="true"></i></i> Top Combatants</h2></div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center mx-auto card light-card">
+                <h4 style="color:#870000">Top Characters</h4>
+                <table id="characters">
+					<tr>
+						<th style="text-align:left;">Rank</th>
+						<th style="text-align:left;">Character Name</th>
+						<th style="text-align:right;">Rating</th>
+					</tr>
+				</table>
+            </div>
+            <div class="col-md-6 text-center mx-auto card dark-card">
+                <h4 style="color:#ffe082">Top Attributes</h4>
+                <table id="attributes">
+					<tr>
+						<th style="text-align:left;">Rank</th>
+						<th style="text-align:left;">Attribute Name</th>
+						<th style="text-align:right;">Rating</th>
+					</tr>
+				</table>
+            </div>
+        </div>
+    </div>
+    <!--main containter end -->
+    <!-- Custom scripts -->
+    <script src="js/top.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Absurd Battle Simulator</title>
+	<meta name="description" content="Absurd Battle Simulator">
+	<meta name="author" content="Michael Winger">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!--Javascript links-->
+    <!-- Bootstrap Scripts -->
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+        crossorigin="anonymous"></script>
+    <!-- jQuery UI -->    
+    <script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+        
+    <!-- Font Links -->
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Righteous" rel="stylesheet">
+	<!-- Font Awesome -->
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<!-- CSS Links -->
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<!-- Site Specific CSS -->
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- navbar begin -->
+    <nav class="navbar sticky-top navbar-custom navbar-expand-md" style="background:#87000">
+        <a class="navbar-brand" href="#"><img src="img/_logo.png" width="30" alt="" class="d-inline-block align-top"><strong>&nbsp;Absurd Battle Simulator</strong></a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        
+        <div id="navbarNav" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="top.html">Top Combatants</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+    
+    <!-- main container -->
+    <div class="col text-center">
+        <h1 style="color:#870000">Absurd Battle Simulator</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col text-center"><h2 style="color:#ffe082"><i class="fa fa-gavel" aria-hidden="true"></i> Choose a Winner</h2></div>
+        </div>
+        <div class="row" id="corners">
+            <div class="col text-center" id="red-corner">
+                <h4 style="color:crimson">In The Red Corner</h4>
+            </div>
+            <div class="col-2 text-center" id="cornerSep">
+            </div>
+            <div class="col text-center" id="blue-corner">
+                <h4 style="color:DodgerBlue ">In The Blue Corner</h4>
+            </div>
+        </div>
+        <div class="row" id="characters">
+            <div class="col text-center card light-card" id="character-1">
+                <h4 id="character-1-name">Character 1 Name</h4>
+                <p id="character-1-rating">Character 1 Rating</p>
+            </div>
+            <div class="col-2 text-center" id="characterSep"><div class="box"></div></div>
+            <div class="col text-center card light-card" id="character-2">
+                <h4 id="character-2-name">Character 2 Name</h4>
+                <p id="character-2-rating">Character 2 Rating</p>
+            </div>
+        </div>
+        
+        <div class="row" id="attributes1">
+            <div class="col text-center card dark-card" id="attribute-1-1">
+                <h4 id="attribute-1-1-name">Attribute 1-1 Name</h4>
+                <p id="attribute-1-1-rating">Attribute 1-1 Rating</p>
+            </div>
+            <div class="col-2 text-center" id="attribute1Sep">
+                <img src="img/vs.png" class="mx-auto d-block img-fluid" alt="">
+            </div>
+            <div class="col text-center card dark-card" id="attribute-1-2">
+                <h4 id="attribute-1-2-name">Attribute 1-2 Name</h4>
+                <p id="attribute-1-2-rating">Attribute 1-2 Rating</p>
+            </div>
+        </div>
+        
+        <div class="row" id="attributes2">
+            <div class="col text-center card dark-card" id="attribute-2-1">
+                <h4 id="attribute-2-1-name">Attribute 2-1 Name</h4>
+                <p id="attribute-2-1-rating">Attribute 2-1 Rating</p>
+            </div>
+            <div class="col-2 text-center" id="attribute2Sep"><div class="box"></div></div>
+            <div class="col text-center card dark-card" id="attribute-2-2">
+                <h4 id="attribute-2-2-name">Attribute 2-2 Name</h4>
+                <p id="attribute-2-2-rating">Attribute 2-2 Rating</p>
+            </div>
+        </div>
+        
+        <div class="row" id="results" style="margin-top:15px">
+            <div class="col text-center" id="redResults">
+                <h4 id="redWins" style="color:crimson"><i class="fa fa-trophy" aria-hidden="true"></i> Red Wins!</h4>
+                <h4 id="redLoses" style="color:crimson"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Red Loses!</h4>
+            </div>
+            <div class="col text-center" id="attribute2Sep">
+                <a href="#" id="newBattle" style="text-decoration:none"><h3 style="color:#ffe082"><i class="fa fa-play" aria-hidden="true"></i> Start New Battle</h3></a>
+            </div>
+            <div class="col text-center" id="blueResults">
+                <h4 id="blueWins" style="color:dodgerblue"><i class="fa fa-trophy" aria-hidden="true"></i> Blue Wins!</h4>
+                <h4 id="blueLoses" style="color:dodgerblue"><i class="fa fa-thumbs-down" aria-hidden="true"></i> Blue Loses!</h4>
+            </div>
+        </div>
+    </div>
+    <!--main containter end -->
+    <!-- Custom scripts -->
+    <script src="js/main.js"></script>
+</body>
+</html>
